@@ -7,7 +7,11 @@
 # values in the list up to the first -999 (if it shows up). There may be negative
 # numbers other than -999 in the list.
 #
-# Fisler, K. (n.d.). The recurring rainfall problem.
+# Fisler, K. (2014). The recurring rainfall problem. In Proceedings of the tenth 
+# annual conference on International computing education research (ICER '14) 
+# (pp. 35-42). New York, NY: ACM. doi:10.1145/2632320.2632346
+
+# This is a "Single Loop" solution
 
 rainfall <- function(x) {
   if (is.vector(x, mode = "double") == FALSE & is.vector(x, mode = "integer") == FALSE) {
@@ -27,9 +31,13 @@ rainfall <- function(x) {
       i <- i + 1
 	}	
   }
+  if (n == 0) {
+    warning("No relevant non-negative values in input",
+      call. = FALSE)
+    mean_r <- NA
+	return(mean_r)
+  }
   mean_r <- tot_r / n
-  if (is.nan(mean_r) == TRUE) warning("No relevant non-negative values in input",
-    call. = FALSE)
   return(mean_r)
 }
 
