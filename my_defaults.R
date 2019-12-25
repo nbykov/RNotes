@@ -7,5 +7,6 @@ options(repos = c(CRAN = "https://mirrors.dotsrc.org/cran/")) # Default CRAN
 beer <- function(save = "no") { q(save = save) }
 
 # Installing packages
-install.packages(c("tidyverse", "psych", "car", "MASS", "faraway"), lib = "C:/Program Files/R/R-3.6.2/library",
+install.packages(c("tidyverse", "psych", "car", "MASS", "faraway", "nortest"),
+  lib = "C:/Program Files/R/R-3.6.2/library",
   repos = "https://mirrors.dotsrc.org/cran/", dependencies = TRUE, verbose = TRUE)
