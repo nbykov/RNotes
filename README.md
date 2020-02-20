@@ -1,7 +1,7 @@
 # Random R Notes
 
-This repository contains a bunch of random R notes and scripts.
-Emphasis on **random**.
+This repository contains a bunch of random R notes and scripts.  
+Emphasis on *random*.
 
 **scoping_and_assignment.R** - an explanation of <<- operator in R and a demonstration
 of scoping rules and what the hierarchy of environments looks like, especially for
