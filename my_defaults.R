@@ -19,4 +19,4 @@ local({
 
 # Installing packages
 install.packages(c("tidyverse", "psych", "car", "MASS", "faraway",
-  "devtools", "nortest"), dependencies = TRUE, verbose = TRUE)
+  "devtools", "nortest", "jtools"), dependencies = TRUE, verbose = TRUE)
