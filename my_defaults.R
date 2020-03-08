@@ -8,8 +8,8 @@ install.packages(c("tidyverse", "psych", "car", "MASS", "faraway",
 
 # ===***===
 
-# Run this LOCALLY (in the script preamble) for reproducibility, when working with datasets
-# with a lot of character vectors
+# Run this LOCALLY (in the script preamble) for reproducibility,
+# when working with datasets with a lot of character vectors
 options(stringsAsFactors = FALSE)
 
 # ===***===
@@ -38,5 +38,3 @@ points = 14
 
 ## Language for messages
 language = "en"
-
-
