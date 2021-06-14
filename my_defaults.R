@@ -23,7 +23,10 @@ local({
 
 ## Write this to c:/Users/%USERNAME%/Documents/.Rprofile
 
-beer <- function(save = "no") { q(save = save) }
+# As of 4.1.0, this behavior is broken, this places function in
+# the regular workspace. Find solution eventually.
+
+# beer <- function(save = "no") { q(save = save) }
 
 # ===***===
 
