@@ -13,13 +13,17 @@ install.packages(c("tidyverse", "psych", "car", "MASS", "faraway",
 
 ## Write this to c:/Program Files/R/R-X.X.X/etc/Rprofile.site
 
-beer <- function(save = "no") { q(save = save) }
-
 local({
   r = getOption("repos")
   r["CRAN"] = "https://mirrors.dotsrc.org/cran/" # AAU Mirror
   options(repos = r)
 })
+
+# ===***===
+
+## Write this to c:/Users/%USERNAME%/Documents/.Rprofile
+
+beer <- function(save = "no") { q(save = save) }
 
 # ===***===
 
